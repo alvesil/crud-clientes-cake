@@ -43,7 +43,7 @@
                     let resposta = JSON.parse(data);  
                     if(resposta['status'] == 'error'){
                         alert('CPF já cadastrado');
-                        <?php echo $this->Flash->success('This was successful'); ?>
+                       
                         $('#cpf').val('');
                     }
                 },
