@@ -34,11 +34,11 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Fk Id Uf') ?></th>
-            <td><?= $this->Number->format($cliente->fk_id_uf) ?></td>
+            <td><?= $this->Number->format($cliente->fk_id_uf, ['id' => 'fk_id_uf']) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Fk Id Cidade') ?></th>
-            <td><?= $this->Number->format($cliente->fk_id_cidade) ?></td>
+            <td><?= $this->Number->format($cliente->fk_id_cidade, ['id' => 'fk_id_cidade']) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Dt Nascimento') ?></th>
@@ -53,8 +53,27 @@
         <h4><?= __('Observacao') ?></h4>
         <?= $this->Text->autoParagraph(h($cliente->observacao)); ?>
     </div>
+   
 </div>
-
-<script>
     
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getCidades']) ?>',
+            method: 'GET',
+            data: {id_uf: $('#fk_id_uf').val()},
+            success: function(data) {
+                alert(data);
+            },
+            error: function(data) {
+                alert(data);
+            },
+            always: function(data) {
+                alert(data);
+            },
+            headers:{   
+                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+            }
+        });
+    });
 </script>

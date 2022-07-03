@@ -34,8 +34,8 @@
                 <td><?= h($cliente->cpf) ?></td>
                 <td><?= h($cliente->dt_nascimento) ?></td>
                 <td><?= h($cliente->sexo) ?></td>
-                <td><?= $this->Number->format($cliente->fk_id_uf) ?></td>
-                <td><?= $this->Number->format($cliente->fk_id_cidade) ?></td>
+                <td id="fk_id_uf"><?= $this->Number->format($cliente->fk_id_uf) ?></td>
+                <td id="fk_id_cidade"><?= $this->Number->format($cliente->fk_id_cidade) ?></td>
                 <td><?= h($cliente->dt_cadastro) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $cliente->id]) ?>
@@ -57,3 +57,50 @@
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
     </div>
 </div>
+<script>
+    $(document).ready(function() {;
+        let fk_id_uf = $('#fk_id_uf').text();
+        let urlUF = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getUf']) ?>';
+        let urlCidade = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getCidade']) ?>';
+        $.ajax({
+            url: urlUF,
+            method: 'POST',
+            data: {id_uf: fk_id_uf},
+            success: function(data) {
+                //alert(data);
+                var uf = JSON.parse(data);
+                //alert(uf.message["UF"]);
+                $('#fk_id_uf').text(uf.message["UF"]);
+            },
+            error: function(data) {
+                //alert(data);
+            },
+            always: function(data) {
+                //alert(data);
+            },
+            headers:{   
+                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+            }
+        });
+        $.ajax({
+            url: urlCidade,
+            method: 'POST',
+            data: {id_cidade: fk_id_cidade},
+            success: function(data) {
+                //alert(data);
+                var uf = JSON.parse(data);
+                //alert(uf.message["UF"]);
+                $('#fk_id_cidade').text(uf.message["cidade"]);
+            },
+            error: function(data) {
+                //alert(data);
+            },
+            always: function(data) {
+                //alert(data);
+            },
+            headers:{   
+                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+            }
+        });
+    });
+</script>
