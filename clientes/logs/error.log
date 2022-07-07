@@ -1,0 +1,579 @@
+2022-06-30 23:07:13 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add.ctp() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.ctp',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/add.ctp
+
+
+2022-07-01 00:02:00 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Froles%2Fadd
+Referer URL: http://localhost/crud-clientes-cake/clientes/users/
+
+
+2022-07-01 00:03:02 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+Referer URL: http://localhost/crud-clientes-cake/clientes/users/
+
+
+2022-07-01 00:04:40 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/logout
+Referer URL: http://localhost/crud-clientes-cake/clientes/users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:21:30 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:21:33 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:22:01 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:22:03 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:23:13 Error: [Error] Call to a member function allow() on bool (C:\wamp64\www\crud-clientes-cake\clientes\src\Controller\AppController.php:75)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(351): App\Controller\AppController->beforeFilter(Object(Cake\Event\Event))
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(328): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(112): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php(673): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:23:13 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php line=855 in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 53]
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php:855) in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 154]
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php:855) in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 183]
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php:855) in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 183]
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:15 Error: [Error] Call to a member function allow() on bool (C:\wamp64\www\crud-clientes-cake\clientes\src\Controller\AppController.php:75)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(351): App\Controller\AppController->beforeFilter(Object(Cake\Event\Event))
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(328): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(112): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php(673): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /users/add
+
+
+2022-07-01 00:23:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php line=855 in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 53]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php:855) in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 154]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php:855) in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 183]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Debugger.php:855) in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 183]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 140
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2022-07-01 00:23:48 Error: Fatal Error (256): [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) (C:\wamp64\www\crud-clientes-cake\clientes\src\Controller\AppController.php:88)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\wamp64\\www\\c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\wamp64\www\crud-clientes-cake\clientes\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\composer\ClassLoader.php(571): include('C:\\wamp64\\www\\c...')
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\wamp64\\www\\c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Core\App.php(151): class_exists('App\\Controller\\...')
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Core\App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 181]
+
+
+2022-07-01 00:23:48 Error: Fatal Error (256): [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) (C:\wamp64\www\crud-clientes-cake\clientes\src\Controller\AppController.php:88)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\wamp64\\www\\c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\wamp64\www\crud-clientes-cake\clientes\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\composer\ClassLoader.php(571): include('C:\\wamp64\\www\\c...')
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\wamp64\\www\\c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Core\Ap in [C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 181]
+
+
+2022-07-01 00:24:15 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-01 00:24:19 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2F
+
+
+2022-07-02 21:17:13 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-02 22:51:13 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2022-07-02 22:51:15 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible. (C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(137): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\crud-clientes-cake\clientes\vendor\cakephp\cakephp\src\Http\Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\crud-clientes-cake\clientes\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
