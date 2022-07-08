@@ -21,9 +21,9 @@ class CidadeFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'fk_id_uf' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'cidade' => ['type' => 'binary', 'length' => 60, 'null' => false, 'default' => '', 'comment' => '', 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'fk_id_uf' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'cidade' => ['type' => 'string', 'length' => 60, 'null' => false, 'default' => '', 'collate' => 'utf8mb4_0900_ai_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_indexes' => [
             'fk_cidade_uf' => ['type' => 'index', 'columns' => ['fk_id_uf'], 'length' => []],
         ],
@@ -32,7 +32,7 @@ class CidadeFixture extends TestFixture
         ],
         '_options' => [
             'engine' => 'MyISAM',
-            'collation' => 'utf8_general_ci'
+            'collation' => 'utf8mb4_0900_ai_ci'
         ],
     ];
     // @codingStandardsIgnoreEnd

@@ -60,8 +60,8 @@
 <script>
     $(document).ready(function() {;
         let fk_id_uf = $('#fk_id_uf').text();
-        let urlUF = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getUf']) ?>';
-        let urlCidade = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getCidade']) ?>';
+        let urlUF = '<?= $this->Url->build(['controller' => 'Uf', 'action' => 'getUf']) ?>';
+        let urlCidade = '<?= $this->Url->build(['controller' => 'Cidade', 'action' => 'getCidade']) ?>';
         $.ajax({
             url: urlUF,
             method: 'POST',
@@ -83,6 +83,9 @@
             }
         });
         $.ajax({
+            headers:{   
+                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+            },
             url: urlCidade,
             method: 'POST',
             data: {id_cidade: fk_id_cidade},
@@ -97,9 +100,6 @@
             },
             always: function(data) {
                 //alert(data);
-            },
-            headers:{   
-                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
             }
         });
     });

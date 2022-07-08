@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -102,5 +103,39 @@ class UfController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+    public function getUf()
+    {
+        try {
+            $data = $this->request->getData();
+            $id_uf = $data['id_uf'];
+            $uf = $this->Uf->find('all')->where(['id' => $id_uf])->first();
+            if ($uf) {
+                $this->response->body(json_encode(['status' => 'success', 'message' => $uf]));
+                return $this->response;
+            } else {
+                $this->response->body(json_encode(['status' => 'error', 'message' => 'Nenhuma Cidade para esta UF']));
+                return $this->response;
+            }
+        } catch (\Exception $e) {
+            $this->response->body(json_encode(['status' => 'error', 'message' => $e->getMessage()]));
+            return $this->response;
+        }
+    }
+    public function getUfs()
+    {
+        try {
+            $ufs = $this->Uf->find('all')->All();
+            if ($ufs) {
+                $this->response->body(json_encode(['status' => 'success', 'message' => $ufs]));
+                return $this->response;
+            } else {
+                $this->response->body(json_encode(['status' => 'error', 'message' => 'Nenhuma Cidade para esta UF']));
+                return $this->response;
+            }
+        } catch (\Exception $e) {
+            $this->response->body(json_encode(['status' => 'error', 'message' => $e->getMessage()]));
+            return $this->response;
+        }
     }
 }

@@ -17,6 +17,10 @@
     <h3><?= h($cidade->id) ?></h3>
     <table class="vertical-table">
         <tr>
+            <th scope="row"><?= __('Cidade') ?></th>
+            <td><?= h($cidade->cidade) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($cidade->id) ?></td>
         </tr>
