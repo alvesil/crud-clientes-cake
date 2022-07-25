@@ -53,6 +53,8 @@ class CidadeTable extends Table
             ->notEmptyString('fk_id_uf');
 
         $validator
+            ->scalar('cidade')
+            ->maxLength('cidade', 60)
             ->notEmptyString('cidade');
 
         return $validator;

@@ -60,17 +60,18 @@
 <script>
     $(document).ready(function() {;
         let fk_id_uf = $('#fk_id_uf').text();
-        let urlUF = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getUf']) ?>';
-        let urlCidade = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getCidade']) ?>';
-        $.ajax({
+        let urlUF = '<?= $this->Url->build(['controller' => 'Uf', 'action' => 'getUf']) ?>';
+        let urlCidade = '<?= $this->Url->build(['controller' => 'Cidade', 'action' => 'getCidade']) ?>';
+        $('table > tbody > tr').each(function(index, tr){
+            $.ajax({
             url: urlUF,
             method: 'POST',
-            data: {id_uf: fk_id_uf},
+            data: {id_uf: index},
             success: function(data) {
                 //alert(data);
                 var uf = JSON.parse(data);
                 //alert(uf.message["UF"]);
-                $('#fk_id_uf').text(uf.message["UF"]);
+                $(this).text(uf.message["UF"]);
             },
             error: function(data) {
                 //alert(data);
@@ -82,7 +83,12 @@
                 'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
             }
         });
+        });
+        
         $.ajax({
+            headers:{   
+                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+            },
             url: urlCidade,
             method: 'POST',
             data: {id_cidade: fk_id_cidade},
@@ -97,9 +103,6 @@
             },
             always: function(data) {
                 //alert(data);
-            },
-            headers:{   
-                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
             }
         });
     });

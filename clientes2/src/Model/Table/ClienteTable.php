@@ -33,6 +33,13 @@ class ClienteTable extends Table
         $this->setTable('cliente');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('Uf', [
+            'foreignKey' => 'id'
+        ]);
+        $this->hasMany('Cidade', [
+            'foreignKey' => 'id'
+        ]);
     }
 
     /**

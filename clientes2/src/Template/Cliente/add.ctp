@@ -26,7 +26,7 @@
         <div class="beforeCPFCheck">
             <?php
             echo $this->Form->control('dt_nascimento');
-            echo $this->Form->control('sexo');
+            echo $this->Form->control('sexo', ['options' => ['M' => 'Masculino', 'F' => 'Feminino']]);
             echo $this->Form->control('observacao');
             echo $this->Form->control('fk_id_uf', ['type' => 'select', 'id' => 'fk_id_uf']);
             echo $this->Form->control('fk_id_cidade', ['type' => 'select', 'id' => 'fk_id_cidade']);
@@ -49,6 +49,7 @@
             var targeturl = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'verifyCpf']) ?>';
             var urlUFs = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getUfs']) ?>';
             //console.log(targeturl);
+
             $.ajax({
                 url: targeturl,
                 method: 'POST',
@@ -61,6 +62,12 @@
                         alert('CPF já cadastrado');
                         $('#cpf').val('');
                     } else {
+                        var cpf = $('#cpf').val();
+                        $("#cpf").on('keyup', function() {
+                            alert('Voce não pode alterar este campo!');
+                            $('#cpf').val(cpf);
+                            $("#cpf").attr('readonly', true);
+                        })
                         $("#cpf").attr('readonly', true);
                         $(".beforeCPFCheck").show();
                         $("#submit").show();
@@ -76,6 +83,7 @@
                                     options += '<option value="' + ufs.message[i].id + '">' + ufs.message[i].UF + '</option>';
                                 }
                                 $('#fk_id_uf').html(options);
+
                             },
                             error: function(data) {
                                 alert(data);
@@ -93,40 +101,40 @@
                     'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
                 }
             });
-            $("#fk_id_uf").on('change', function() {
-                var id_cidade = $('#fk_id_uf').val();
-                //alert(id_cidade);
-                var urlCidades = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getCidades']) ?>';
-                $.ajax({
-                    url: urlCidades,
-                    data: {
-                        id: $(this).val()
-                    },
-                    method: 'PUT',
-                    dataType: 'json',
-                    success: function(data) {
-                        console.log(JSON.parse(data));
-                        // var cidades = JSON.parse(data);
-                        // console.log(cidades);
-                        // var options = '<option value="">Selecione</option>';
-                        // for (var i = 0; i < cidades.message.length; i++) {
-                        //     options += '<option value="' + cidades.message[i].id + '">' + cidades.message[i].UF + '</option>';
-                        // }
-                        // $('#fk_id_cidade').html(options);
-                    },
-                    error: function(data) {
-                        console.log(JSON.stringify(data));
-                        //console.log(data);
-                    },
-                    always: function(data) {
-                        //alert(data);
-                    },
-                    headers: {
-                        'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
-                    }
-                });
-            });
 
+
+        });
+        $("#fk_id_uf").on('change', function() {
+            var id_cidade = $('#fk_id_uf').val();
+            //alert(id_cidade);
+            var urlCidades = '<?= $this->Url->build(['controller' => 'Cidade', 'action' => 'getCidades']) ?>';
+            console.log(1);
+            $.ajax({
+                headers: {
+                    'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+                },
+                url: 'http://localhost/crud-clientes-cake/clientes2/cidade/get-cidades',
+                data: {
+                    id: $(this).val()
+                },
+                method: 'POST',
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data.data);
+                    if (data.data.length > 0) {
+                        var options = '<option value="">Selecione</option>';
+                    }else{
+                        var options = '<option value="">Nenhuma cidade encontrada par a UF selecionada</option>';
+                    }
+                    $.each(data.data, function(index, value) {
+                        options += '<option value="' + value.id + '">' + value.cidade + '</option>';
+                    });
+                    $('#fk_id_cidade').html(options);
+                },
+                error: function(data) {
+                    console.log(data);
+                },
+            });
         });
     });
 </script>

@@ -33,6 +33,10 @@ class UfTable extends Table
         $this->setTable('uf');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('Cidade', [
+            'foreignKey' => 'fk_id_uf'
+        ]);
     }
 
     /**

@@ -103,4 +103,20 @@ class CidadeController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function getCidades()
+    {
+       try {
+            $data = $this->request->getData();
+            $id_uf = $data['id'];
+            $cidades = $this->Cidade->find()->select(['id','cidade'])->where(['fk_id_uf' => $id_uf])->All()->toArray();
+            if (count($cidades) > 0) {
+                return die (json_encode(['status' => 'success', 'data' => $cidades, 'message' => 'Cidades encontradas']));      
+            } else {
+            return die (json_encode(['status' => 'error', 'data' => $cidades, 'message' => 'Nenhuma Cidade para esta UF']));                
+            }
+        } catch (\Exception $e) {
+            return die(json_encode(['status' => 'error','data' => $cidades, 'message' => $e->getMessage()], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+        }
+        
+    }
 }

@@ -22,6 +22,7 @@
         <legend><?= __('Edit Cidade') ?></legend>
         <?php
             echo $this->Form->control('fk_id_uf');
+            echo $this->Form->control('cidade');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

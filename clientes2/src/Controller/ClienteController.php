@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use App\Model\Entity\Cidade;
 use Cake\ORM\TableRegistry;
 
 /**
@@ -13,44 +14,6 @@ use Cake\ORM\TableRegistry;
  */
 class ClienteController extends AppController
 {
-    public function getUf()
-    {
-       try {
-            $data = $this->request->getData();
-            $id_uf = $data['id_uf'];
-            $uf = TableRegistry::get('Uf');
-            $uf = $uf->find('all')->where(['id' => $id_uf])->first();
-            if ($uf) {
-                $this->response->body(json_encode(['status' => 'success', 'message' => $uf]));
-                return $this->response;
-            } else {
-                $this->response->body(json_encode(['status' => 'error', 'message' => 'Nenhuma Cidade para esta UF']));
-                return $this->response;
-            }
-        } catch (\Exception $e) {
-            $this->response->body(json_encode(['status' => 'error', 'message' => $e->getMessage()]));
-            return $this->response;
-        }
-        
-    }
-    public function getUfs()
-    {
-       try {
-            $uf = TableRegistry::get('Uf');
-            $ufs = $uf->find('all')->All();
-            if ($ufs) {
-                $this->response->body(json_encode(['status' => 'success', 'message' => $ufs]));
-                return $this->response;
-            } else {
-                $this->response->body(json_encode(['status' => 'error', 'message' => 'Nenhuma Cidade para esta UF']));
-                return $this->response;
-            }
-        } catch (\Exception $e) {
-            $this->response->body(json_encode(['status' => 'error', 'message' => $e->getMessage()]));
-            return $this->response;
-        }
-        
-    }
     public function getCidade()
     {
        try {
@@ -71,29 +34,7 @@ class ClienteController extends AppController
         }
         
     }
-    public function getCidades()
-    {
-       try {
-            $data = $this->request->getData();
-            $id_uf = $data['id'];
-            //$this->response->body(json_encode(['status' => 'success', 'message' => $data['id']]));
-            //return $this->response;
-            $cidade = TableRegistry::getTableLocator()->get('Cidade');;
-            $cidade = $cidade->find()->where(['fk_id_uf' => $id_uf])->All();
-
-            if ($cidade) {
-                $this->response->body(json_encode(['status' => 'success', 'message' => $cidade]));
-                return $this->response;
-            } else {
-                $this->response->body(json_encode(['status' => 'error', 'message' => 'Nenhuma Cidade para esta UF']));
-                return $this->response;
-            }
-        } catch (\Exception $e) {
-            $this->response->body(json_encode(['status' => 'error', 'message' => $e->getMessage()]));
-            return $this->response;
-        }
-        
-    }
+    
     public function verifyCpf(){
         $data = $this->request->getData();
         $cpf = $data['cpf'];
@@ -129,7 +70,7 @@ class ClienteController extends AppController
     public function view($id = null)
     {
         $cliente = $this->Cliente->get($id, [
-            'contain' => [],
+            'contain' => ['Uf', 'Cidade'],
         ]);
 
         $this->set('cliente', $cliente);

@@ -8,7 +8,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property int $fk_id_uf
- * @property string|resource $cidade
+ * @property string $cidade
  */
 class Cidade extends Entity
 {
