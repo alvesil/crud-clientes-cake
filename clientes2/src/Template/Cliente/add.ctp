@@ -47,7 +47,7 @@
         $('#check').on('click', function() {
             var cpf = $('#cpf').val();
             var targeturl = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'verifyCpf']) ?>';
-            var urlUFs = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'getUfs']) ?>';
+            var urlUFs = '<?= $this->Url->build(['controller' => 'Uf', 'action' => 'getUfs']) ?>';
             //console.log(targeturl);
 
             $.ajax({

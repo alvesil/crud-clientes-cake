@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Cliente[]|\Cake\Collection\CollectionInterface $cliente
@@ -12,7 +13,7 @@
 </nav>
 <div class="cliente index large-9 medium-8 columns content">
     <h3><?= __('Cliente') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+    <table id="clienteIndexTable" cellpadding="0" cellspacing="0">
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
@@ -27,22 +28,22 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($cliente as $cliente): ?>
-            <tr>
-                <td><?= $this->Number->format($cliente->id) ?></td>
-                <td><?= h($cliente->nome) ?></td>
-                <td><?= h($cliente->cpf) ?></td>
-                <td><?= h($cliente->dt_nascimento) ?></td>
-                <td><?= h($cliente->sexo) ?></td>
-                <td id="fk_id_uf"><?= $this->Number->format($cliente->fk_id_uf) ?></td>
-                <td id="fk_id_cidade"><?= $this->Number->format($cliente->fk_id_cidade) ?></td>
-                <td><?= h($cliente->dt_cadastro) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $cliente->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $cliente->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $cliente->id], ['confirm' => __('Are you sure you want to delete # {0}?', $cliente->id)]) ?>
-                </td>
-            </tr>
+            <?php foreach ($cliente as $cliente) : ?>
+                <tr>
+                    <td><?= $this->Number->format($cliente->id) ?></td>
+                    <td><?= h($cliente->nome) ?></td>
+                    <td><?= h($cliente->cpf) ?></td>
+                    <td><?= h($cliente->dt_nascimento) ?></td>
+                    <td><?= h($cliente->sexo) ?></td>
+                    <td id="fk_id_uf"><?= $this->Number->format($cliente->fk_id_uf) ?></td>
+                    <td id="fk_id_cidade"><?= $this->Number->format($cliente->fk_id_cidade) ?></td>
+                    <td><?= h($cliente->dt_cadastro) ?></td>
+                    <td class="actions">
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $cliente->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $cliente->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $cliente->id], ['confirm' => __('Are you sure you want to delete # {0}?', $cliente->id)]) ?>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
@@ -58,52 +59,39 @@
     </div>
 </div>
 <script>
-    $(document).ready(function() {;
-        let fk_id_uf = $('#fk_id_uf').text();
-        let urlUF = '<?= $this->Url->build(['controller' => 'Uf', 'action' => 'getUf']) ?>';
-        let urlCidade = '<?= $this->Url->build(['controller' => 'Cidade', 'action' => 'getCidade']) ?>';
-        $('table > tbody > tr').each(function(index, tr){
+    $(document).ready(function() {
+        $("#clienteIndexTable #fk_id_uf").each(function() {
             $.ajax({
-            url: urlUF,
-            method: 'POST',
-            data: {id_uf: index},
-            success: function(data) {
-                //alert(data);
-                var uf = JSON.parse(data);
-                //alert(uf.message["UF"]);
-                $(this).text(uf.message["UF"]);
-            },
-            error: function(data) {
-                //alert(data);
-            },
-            always: function(data) {
-                //alert(data);
-            },
-            headers:{   
-                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
-            }
+                headers: {
+                    'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+                },
+                url: '<?= $this->Url->build(['controller' => 'Uf', 'action' => 'getUf']) ?>',
+                type: 'POST',
+                data: {
+                    id_uf: $(this).text()
+                },
+                success: function(data) {
+                    var resultado = JSON.parse(data);
+                    console.log(resultado);
+                    $("#clienteIndexTable #fk_id_uf").text(resultado.message.UF);
+                }
+            });
         });
-        });
-        
-        $.ajax({
-            headers:{   
-                'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
-            },
-            url: urlCidade,
-            method: 'POST',
-            data: {id_cidade: fk_id_cidade},
-            success: function(data) {
-                //alert(data);
-                var uf = JSON.parse(data);
-                //alert(uf.message["UF"]);
-                $('#fk_id_cidade').text(uf.message["cidade"]);
-            },
-            error: function(data) {
-                //alert(data);
-            },
-            always: function(data) {
-                //alert(data);
-            }
+        $("#clienteIndexTable #fk_id_cidade").each(function() {
+            $.ajax({
+                headers: {
+                    'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'
+                },
+                url: '<?= $this->Url->build(['controller' => 'Cidade', 'action' => 'getCidade']) ?>',
+                type: 'POST',
+                data: {
+                    id_cidade: $(this).text()
+                },
+                success: function(data) {
+                    var resultado = JSON.parse(data);
+                    $("#clienteIndexTable #fk_id_cidade").text(resultado.data.cidade);
+                }
+            });
         });
     });
 </script>

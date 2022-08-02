@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -103,20 +104,35 @@ class CidadeController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-    public function getCidades()
+    public function getCidade()
     {
-       try {
+        try {
             $data = $this->request->getData();
-            $id_uf = $data['id'];
-            $cidades = $this->Cidade->find()->select(['id','cidade'])->where(['fk_id_uf' => $id_uf])->All()->toArray();
-            if (count($cidades) > 0) {
-                return die (json_encode(['status' => 'success', 'data' => $cidades, 'message' => 'Cidades encontradas']));      
-            } else {
-            return die (json_encode(['status' => 'error', 'data' => $cidades, 'message' => 'Nenhuma Cidade para esta UF']));                
+            $id_cidade = $data['id_cidade'];
+            $cidade = $this->Cidade->find()->where(['id' => $id_cidade])->first();
+            if($cidade){
+                return die(json_encode(['status' => 'success', 'data' => $cidade]));
+            }
+            else {
+                return die (json_encode(['status' => 'error', 'message' => 'Cidade não encontrada']));
             }
         } catch (\Exception $e) {
-            return die(json_encode(['status' => 'error','data' => $cidades, 'message' => $e->getMessage()], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+            return die(json_encode(['status' => 'error', 'message' => $e->getMessage()], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
         }
-        
+    }
+    public function getCidades()
+    {
+        try {
+            $data = $this->request->getData();
+            $id_uf = $data['id'];
+            $cidades = $this->Cidade->find()->select(['id', 'cidade'])->where(['fk_id_uf' => $id_uf])->All()->toArray();
+            if (count($cidades) > 0) {
+                return die(json_encode(['status' => 'success', 'data' => $cidades, 'message' => 'Cidades encontradas']));
+            } else {
+                return die(json_encode(['status' => 'error', 'data' => $cidades, 'message' => 'Nenhuma Cidade para esta UF']));
+            }
+        } catch (\Exception $e) {
+            return die(json_encode(['status' => 'error', 'message' => $e->getMessage()], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+        }
     }
 }
