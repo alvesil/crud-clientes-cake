@@ -41,6 +41,7 @@
         var cpf = $('#cpf').val();
         var targeturl = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'verifyCpf']) ?>';
         var urlUFs = '<?= $this->Url->build(['controller' => 'Uf', 'action' => 'getUfs']) ?>';
+        
         $.ajax({
             headers: {
                 'X-CSRF-Token': '<?= h($this->request->getParam('_csrfToken')); ?>'

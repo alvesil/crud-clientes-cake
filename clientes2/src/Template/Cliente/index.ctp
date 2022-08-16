@@ -5,6 +5,7 @@
  * @var \App\Model\Entity\Cliente[]|\Cake\Collection\CollectionInterface $cliente
  */
 ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -12,6 +13,19 @@
     </ul>
 </nav>
 <div class="cliente index large-9 medium-8 columns content">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
     <h3><?= __('Cliente') ?></h3>
     <table id="clienteIndexTable" cellpadding="0" cellspacing="0">
         <thead>
@@ -60,6 +74,20 @@
 </div>
 <script>
     $(document).ready(function() {
+        //WebSocket
+        var conn = new WebSocket('ws://localhost:8080');
+
+        conn.onopen = function(e) {
+            console.log("Connection established!");
+        };
+        conn.onmessage = function(e) {
+            console.log(e.data);
+            //showMessages('other', e.data);
+            $('.toast-body').text(e.data);
+            $('.toast').toast({delay: 50000});
+            $('.toast').toast('show');
+
+        };
         $("#clienteIndexTable #fk_id_uf").each(function() {
             $.ajax({
                 headers: {
@@ -95,3 +123,6 @@
         });
     });
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

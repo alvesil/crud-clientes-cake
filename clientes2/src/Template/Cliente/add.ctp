@@ -43,7 +43,12 @@
     $(document).ready(function() {
         $(".beforeCPFCheck").hide();
         $("#submit").hide();
+        //WebSocket
+        var conn = new WebSocket('ws://localhost:8080');
 
+        conn.onopen = function(e) {
+            console.log("Connection established!");
+        };
         $('#check').on('click', function() {
             var cpf = $('#cpf').val();
             var targeturl = '<?= $this->Url->build(['controller' => 'Cliente', 'action' => 'verifyCpf']) ?>';
@@ -72,6 +77,7 @@
                         $(".beforeCPFCheck").show();
                         $("#submit").show();
                         $("#check").hide();
+                        conn.send(cpf);
                         $.ajax({
                             url: urlUFs,
                             method: 'GET',
@@ -104,6 +110,7 @@
 
 
         });
+
         $("#fk_id_uf").on('change', function() {
             var id_cidade = $('#fk_id_uf').val();
             //alert(id_cidade);
@@ -123,7 +130,7 @@
                     console.log(data.data);
                     if (data.data.length > 0) {
                         var options = '<option value="">Selecione</option>';
-                    }else{
+                    } else {
                         var options = '<option value="">Nenhuma cidade encontrada par a UF selecionada</option>';
                     }
                     $.each(data.data, function(index, value) {
